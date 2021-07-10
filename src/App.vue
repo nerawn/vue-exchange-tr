@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-    <exchange :expect="[['dolar', 'USD'], ['Euro', 'EUR'], ['BHD', 'BHD'],['cumhuriyet', 'cumhuriyet-altini']] " />
+    <exchange :expect="[['dolar', 'USD'], ['Euro', 'EUR'], ['BHD', 'BHD'],['cumhuriyet', 'cumhuriyet-altini']]" />
 </div>
 </template>
 

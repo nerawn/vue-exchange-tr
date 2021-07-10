@@ -1,21 +1,47 @@
-# vue-exchange
+#Vue Exchange TR
 
-## Project setup
-```
-npm install
-```
+#####Bu kompanent, api işlemini türkiye kuru üzerinden çekmektedir.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+##Kullanımı
 
-### Compiles and minifies for production
+######İndirme
+
 ```
-npm run build
+npm i vue-exchange-tr
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"# vue-exchange-tr" 
-# vue-exchange-tr
+######Tanıtım
+
+```
+import Vue from 'vue'
+import exchange from 'vue-exchange-tr'
+Vue.use(exchange);
+```
+
+######Local
+
+```
+import exchange from 'vue-exchange-tr';
+
+export default {
+  ...
+  components: {
+    exchange
+  }
+  ...
+};
+```
+######Template üzerinde Kullanımı
+```
+ <div style="width:250px;>
+        <exchange :expect="[['dolar', 'USD'], ['euro', 'EUR']] " />
+ </div>
+```
+
+######Template üzerinde Kullanımı
+
+Ekstralar
+
+- Kompanent demo aşamasındadır. Ekstra olarak ingilizce dil seçeneği ve lokasyon ayarı eklenecektir.
+- expect bölümü key value şeklinde çalışmaktadır.
+- configrasyon bir sonraki güncellemede gelecektir.
