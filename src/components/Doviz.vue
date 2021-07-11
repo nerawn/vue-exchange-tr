@@ -31,9 +31,14 @@ export default {
     },
 
     props: {
-        expect: {
-            type: Array,
-        },
+        expect: {type: Array,required: true},
+        width: String,
+        height: String,
+        headColor: String,
+        nthColor:String,
+        fontSize: Number,
+        padding:Number,
+        icon:String,
     },
 
     created() {
@@ -68,32 +73,6 @@ export default {
 </script>
 
 <style scoped>
-.lists {
-    padding: 5%;
-    background-color: #1289A7;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-.lists li {
-    color: white;
-    width: 100%;
-
-}
-
-h5 {
-    margin-top: 0px;
-    color: white
-}
-
-.lists a {
-    color: white;
-}
-
-.lists ul {
-    padding-left: 20px;
-}
-
 .exchange {
     color: #707070;
     border-radius: 10px;
@@ -102,17 +81,17 @@ h5 {
 
 }
 
-.exchangeTable {
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-
+    width: 50%;
+    text-align: center;
+    height: 150px;
 }
 
 td,
 th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 9px !important;
+    padding: 11px !important;
     font-size: 12px;
 }
 
@@ -123,17 +102,6 @@ th {
 
 tr:nth-child(even) {
     background-color: #f0f0f08e;
-}
-
-.news {
-
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    margin-top: 20px;
 }
 
 .fa-arrow-alt-circle-down {
@@ -148,10 +116,5 @@ tr:nth-child(even) {
 td:last-child {
     text-align: center;
     font-size: 20px;
-}
-
-.news img {
-    width: 90px;
-    height: 100px;
 }
 </style>

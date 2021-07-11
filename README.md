@@ -1,26 +1,26 @@
-#Vue Exchange TR
+# Vue Exchange TR
 
-#####Bu kompanent, api işlemini türkiye kuru üzerinden çekmektedir.
+##### Bu kompanent, api işlemini türkiye kuru üzerinden çekmektedir.
 
-##Kullanımı
+## Kullanımı
 
-######İndirme
+###### İndirme
 
-```
+```bash
 npm i vue-exchange-tr
 ```
 
-######Tanıtım
+###### Tanıtım
 
-```
+```js
 import Vue from 'vue'
 import exchange from 'vue-exchange-tr'
 Vue.use(exchange);
 ```
 
-######Local
+###### Local
 
-```
+```js
 import exchange from 'vue-exchange-tr';
 
 export default {
@@ -31,14 +31,14 @@ export default {
   ...
 };
 ```
-######Template üzerinde Kullanımı
-```
- <div style="width:250px;>
+###### Template üzerinde Kullanımı
+```html
+ <div style="width:250px;">
         <exchange :expect="[['dolar', 'USD'], ['euro', 'EUR']] " />
  </div>
 ```
 
-######Template üzerinde Kullanımı
+
 
 Ekstralar
 
