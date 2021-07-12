@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>vueExchangeTr demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./vueExchangeTr.umd.js"></script>
+
+<link rel="stylesheet" href="./vueExchangeTr.css">
+
+
+<div id="app">
+  <demo :expect="[['dolar', 'USD'], ['Euro', 'EUR'], ['BHD', 'BHD'],['cumhuriyet', 'cumhuriyet-altini']]" :headColor="'#707070'" :width="'300px'"  ></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: vueExchangeTr
+  }
+}).$mount('#app')
+</script>

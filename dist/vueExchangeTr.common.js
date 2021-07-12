@@ -87,21 +87,21 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "6e3c":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "86e3":
+/***/ "0825":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Doviz_vue_vue_type_style_index_0_id_25a34e70_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("6e3c");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Doviz_vue_vue_type_style_index_0_id_25a34e70_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Doviz_vue_vue_type_style_index_0_id_25a34e70_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Doviz_vue_vue_type_style_index_0_id_276f3b38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("36ed");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Doviz_vue_vue_type_style_index_0_id_276f3b38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Doviz_vue_vue_type_style_index_0_id_276f3b38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
 
+
+/***/ }),
+
+/***/ "36ed":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -221,14 +221,15 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1b659c65-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Doviz.vue?vue&type=template&id=25a34e70&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('div',{staticClass:"exchange"},[(_vm.filtered.length !== 0)?_c('table',[_vm._m(0),_vm._l((_vm.filtered),function(item,index){return _c('tr',{key:index},[_c('td',[_vm._v(_vm._s(item.name))]),_c('td',[_vm._v(_vm._s(item.degerler.Alış))]),_c('td',[_vm._v(_vm._s(item.degerler.Satış))]),_c('td',[_c('i',{staticClass:"fas",class:_vm.getDegisim(item.degerler)})])])})],2):_vm._e()])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',{staticClass:"orange"},[_c('th',[_vm._v("Döviz Cinsi")]),_c('th',[_vm._v("Alış")]),_c('th',[_vm._v("Satış")]),_c('th',[_vm._v("Değişim")])])}]
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"738b3cd7-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Doviz.vue?vue&type=template&id=276f3b38&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('link',{attrs:{"rel":"stylesheet","href":"https://pro.fontawesome.com/releases/v5.10.0/css/all.css"}}),_c('div',{staticClass:"exchange"},[(_vm.filtered.length !== 0)?_c('table',{style:({width:_vm.width ? _vm.width : '30%' })},[_c('tr',{staticClass:"orange"},[_c('th',{style:({backgroundColor: _vm.head})},[_vm._v("Döviz Cinsi")]),_c('th',{style:({backgroundColor: _vm.head})},[_vm._v("Alış")]),_c('th',{style:({backgroundColor: _vm.head})},[_vm._v("Satış")]),_c('th',{style:({backgroundColor: _vm.head})},[_vm._v("Değişim")])]),_vm._l((_vm.filtered),function(item,index){return _c('tr',{key:index},[_c('td',[_vm._v(_vm._s(item.name))]),_c('td',[_vm._v(_vm._s(item.degerler.Alış))]),_c('td',[_vm._v(_vm._s(item.degerler.Satış))]),_c('td',[_c('i',{staticClass:"fas",class:_vm.getDegisim(item.degerler)})])])})],2):_vm._e()])])}
+var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Doviz.vue?vue&type=template&id=25a34e70&scoped=true&
+// CONCATENATED MODULE: ./src/components/Doviz.vue?vue&type=template&id=276f3b38&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Doviz.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -257,18 +258,25 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
 
     data() {
         return {
-            filtered: []
+            filtered: [],
+
         }
     },
-
     props: {
         expect: {
             type: Array,
+            required: true
         },
+        headColor: String,
+        width: String,
+        height: String,
+        nthColor: String,
+        fontSize: Number,
+        padding: Number,
+        icon: String,
     },
 
     created() {
-
         fetch('https://finans.truncgil.com/today.json')
             .then(response => response.json())
             .then(data => {
@@ -287,6 +295,16 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
                 }
             })
     },
+
+    computed: {
+        head() {
+            if (this.headColor) {
+                return this.headColor
+            } else
+                return 'blue'
+
+        }
+    },
     methods: {
         getDegisim(data) {
             if (data.Değişim[1] == '-')
@@ -299,8 +317,8 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
 
 // CONCATENATED MODULE: ./src/components/Doviz.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Dovizvue_type_script_lang_js_ = (Dovizvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/Doviz.vue?vue&type=style&index=0&id=25a34e70&scoped=true&lang=css&
-var Dovizvue_type_style_index_0_id_25a34e70_scoped_true_lang_css_ = __webpack_require__("86e3");
+// EXTERNAL MODULE: ./src/components/Doviz.vue?vue&type=style&index=0&id=276f3b38&scoped=true&lang=css&
+var Dovizvue_type_style_index_0_id_276f3b38_scoped_true_lang_css_ = __webpack_require__("0825");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -417,7 +435,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "25a34e70",
+  "276f3b38",
   null
   
 )

@@ -1,12 +1,13 @@
 <template>
 <div id="app">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <div class="exchange">
-        <table v-if="filtered.length !== 0">
+        <table v-if="filtered.length !== 0" :style="{width:width ? width : '30%' }">
             <tr class="orange">
-                <th>Döviz Cinsi</th>
-                <th>Alış</th>
-                <th>Satış</th>
-                <th>Değişim</th>
+                <th :style="{backgroundColor: head}">Döviz Cinsi</th>
+                <th :style="{backgroundColor: head}">Alış</th>
+                <th :style="{backgroundColor: head}">Satış</th>
+                <th :style="{backgroundColor: head}">Değişim</th>
             </tr>
 
             <tr v-for="(item,index) in filtered" :key="index">
@@ -26,23 +27,29 @@ export default {
 
     data() {
         return {
-            filtered: []
+            filtered: [],
+            up: "",
+            down: ""
+
         }
     },
+    // props: {
+    //     expect: {
+    //         type: Array,
+    //         required: true
+    //     },
+    //     headColor: String,
+    //     width: [Number, String],
+    //     height: String,
+    //     nthColor: String,
+    //     fontSize: Number,
+    //     padding: Number,
+    //     icon: Object,
+    // },
 
-    props: {
-        expect: {type: Array,required: true},
-        width: String,
-        height: String,
-        headColor: String,
-        nthColor:String,
-        fontSize: Number,
-        padding:Number,
-        icon:String,
-    },
+    props: ['headColor', 'expect', 'width', 'icon'],
 
     created() {
-
         fetch('https://finans.truncgil.com/today.json')
             .then(response => response.json())
             .then(data => {
@@ -60,12 +67,39 @@ export default {
                     this.filtered.push(birim)
                 }
             })
+        console.log(this.icon)
+        switch (this.icon) {
+            case "arrow":
+                this.up = "fa-arrow-alt-circle-up"
+                this.down = "fa-arrow-alt-circle-down"
+                break;
+            case "angle":
+                this.up = "fa-angle-up"
+                this.down = "fa-angle-down"
+                break;
+            case "caret":
+                this.up = "fa-caret-up"
+                this.down = "fa-caret-down"
+                break;
+
+        }
     },
+
+    computed: {
+        head() {
+            if (this.headColor) {
+                return this.headColor
+            } else
+                return 'blue'
+
+        }
+    },
+
     methods: {
         getDegisim(data) {
             if (data.Değişim[1] == '-')
-                return 'fa-arrow-alt-circle-down'
-            return 'fa-arrow-alt-circle-up'
+                return this.up
+            return this.down
         }
     },
 
@@ -78,7 +112,6 @@ export default {
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
 table {
@@ -96,7 +129,6 @@ th {
 }
 
 .orange th {
-    background-color: #F39C12 !important;
     color: white;
 }
 
@@ -104,17 +136,29 @@ tr:nth-child(even) {
     background-color: #f0f0f08e;
 }
 
-.fa-arrow-alt-circle-down {
-    color: #dc3545;
-}
-
-.fa-arrow-alt-circle-up {
+.fa-arrow-alt-circle-up,
+.fa-angle-up,
+.fa-caret-up {
     color: #28a745;
 
+}
+
+.fa-arrow-alt-circle-down,
+.fa-angle-down,
+.fa-caret-down {
+    color: #dc3545;
 }
 
 td:last-child {
     text-align: center;
     font-size: 20px;
+}
+
+.birinciClass th {
+    background-color: #28a745 !important;
+}
+
+.ikinciClass th {
+    background-color: red !important;
 }
 </style>

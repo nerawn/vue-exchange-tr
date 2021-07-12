@@ -1,6 +1,12 @@
+// ! çift tırnağın içinde ekstra tırnak açılmaması lazım
+// ! Readme pushlanmadan önce ayarla 
+// ? width height padding font size ve border dinamik olması lazım 
+// * default ayarı yapılmalı 
+
 <template>
 <div id="app">
-    <exchange :expect="[['dolar', 'USD'], ['Euro', 'EUR'], ['BHD', 'BHD'],['cumhuriyet', 'cumhuriyet-altini']]" />
+    <exchange :expect="[['dolar', 'USD'], ['Euro', 'EUR'], ['BHD', 'BHD'],['cumhuriyet', 'cumhuriyet-altini']]" :headColor="'#707070'" :width="'300px'" :icon="'caret'" />
+
 </div>
 </template>
 
@@ -12,7 +18,7 @@ export default {
     },
 }
 </script>
-    
+
 <style  scoped>
 
 </style>
