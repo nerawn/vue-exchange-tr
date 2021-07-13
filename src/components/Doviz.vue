@@ -4,7 +4,7 @@
     <div class="exchange">
         <table v-if="filtered.length !== 0" :style="{width:width ? width : '30%' }">
             <tr class="orange">
-                <th :style="{backgroundColor: head}">Döviz Cinsi</th>
+                <th :style="{backgroundColor: head}">Döviz</th>
                 <th :style="{backgroundColor: head}">Alış</th>
                 <th :style="{backgroundColor: head}">Satış</th>
                 <th :style="{backgroundColor: head}">Değişim</th>
@@ -67,7 +67,6 @@ export default {
                     this.filtered.push(birim)
                 }
             })
-        console.log(this.icon)
         switch (this.icon) {
             case "arrow":
                 this.up = "fa-arrow-alt-circle-up"

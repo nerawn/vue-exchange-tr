@@ -5,20 +5,18 @@
 
 <template>
 <div id="app">
-    <exchange :expect="[['dolar', 'USD'], ['Euro', 'EUR'], ['BHD', 'BHD'],['cumhuriyet', 'cumhuriyet-altini']]" :headColor="'#707070'" :width="'300px'" :icon="'caret'" />
-
+    <exchange :expect="[['dolar', 'USD'],['Euro', 'EUR'],['BHD', 'BHD'],['cumhuriyet', 'cumhuriyet-altini'],]" headColor="#707070" width="500px" icon="arrow" />
 </div>
 </template>
 
 <script>
-import Exchange from './components/Doviz.vue';
+import Exchange from "./components/Doviz.vue";
 export default {
     components: {
         Exchange,
     },
-}
+};
 </script>
 
 <style  scoped>
-
 </style>
