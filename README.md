@@ -5,7 +5,7 @@
 - **Kompanent demo aşamasındadır, ingilizce dil seçeneği ve lokasyon ayarı eklenecektir.**
 
 
-- **Hatalar veya geliştirme önerileri için lütfen  [issue atın](https://github.com/SSENSE/vue-carousel/issues)**.
+- **Hatalar veya geliştirme önerileri için lütfen  [issue atın](https://github.com/nerawn/vue-exchange-tr/issues)**.
 
 
 
